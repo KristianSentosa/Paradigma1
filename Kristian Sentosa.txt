@@ -1,0 +1,42 @@
+* Input
+
+class Book:
+   
+   bokCount = 0
+
+   def __init__(self, nama, nomor, halaman):
+      self.nama = nama
+      self.nomor = nomor
+      self.halaman = halaman
+      Book.bokCount += 1
+   
+   def displayCount(self):
+     print ("Total Book %d" % Book.bokCount)
+
+b = Book("Akuntansi Dasar", 1, 214)
+print()
+print("Nama :", b.nama)
+print("Nomor Buku :", b.nomor, "")
+print("Junlah Halaman :", b.halaman, "Lembar" )
+
+
+a = Book("Akuntansi Biaya", 2, 215)
+print()
+print("Nama :", a.nama)
+print("Nomor Buku :", a.nomor, "")
+print("Jumlah Halaman :", a.halaman, "Lembar" )
+
+
+print ("Total Buku %d" % Book.bokCount)
+
+*OutPut
+(base) C:\Users\Satans\Documents\Python>python Coba5.py
+
+Nama : Akuntansi Dasar
+Nomor Buku : 1
+Junlah Halaman : 214 Lembar
+
+Nama : Akuntansi Biaya
+Nomor Buku : 2
+Jumlah Halaman : 215 Lembar
+Total Buku 2
